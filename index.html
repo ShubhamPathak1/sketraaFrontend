@@ -10,8 +10,6 @@
 
 <body>
   <div class="mainPage">
-
-
     <div class="userInput">
       <div class="areaInp">
         <p class="inpHead">Area of Land</p>
@@ -20,7 +18,6 @@
             <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5</option>
-            <option value="6">6</option>
           </select>
           <label for="aanaInp">Aana</label>
           <select name="paisaInp" id="paisaInp">
@@ -38,42 +35,48 @@
           <div class="counter">
             <i class="fa-solid fa-bed"></i>
             <p>Bedroom</p>
-            <input type="number" class="count" id="countBed" value="2" min="2" max="3">
+            <input type="number" class="count" id="countBed" value="2" min="2">
+            <!-- <input type="number" class="count" id="countBed" value="2" min="2" max="3"> -->
           </div>
         </div>
         <div class="room">
           <div class="counter">
             <i class="fa-solid fa-couch"></i>
             <p>Living Room</p>
-            <input type="number" class="count" id="countLiving" value="1" max="1" min="1">
+            <input type="number" class="count" id="countLiving" value="1" min="1">
+            <!-- <input type="number" class="count" id="countLiving" value="1" max="1" min="1"> -->
           </div>
         </div>
         <div class="room">
           <div class="counter">
             <i class="fa-solid fa-kitchen-set"></i>
             <p>Kitchen</p>
-            <input type="number" class="count" id="countKitchen" value="1" max="1" min="1">
+            <input type="number" class="count" id="countKitchen" value="1" min="1">
+            <!-- <input type="number" class="count" id="countKitchen" value="1" max="1" min="1"> -->
           </div>
         </div>
         <div class="room">
           <div class="counter">
             <i class="fa-solid fa-bath"></i>
             <p>Bathroom</p>
-            <input type="number" class="count" id="countBath" value="1" max="2" min="1">
+            <input type="number" class="count" id="countBath" value="1" min="1">
+            <!-- <input type="number" class="count" id="countBath" value="1" max="2" min="1"> -->
           </div>
         </div>
         <div class="room">
           <div class="counter">
             <i class="fa-solid fa-utensils"></i>
             <p>Dining Room</p>
-            <input type="number" class="count" id="countDining" value="0" min="0" max="1">
+            <input type="number" class="count" id="countDining" value="0" min="0">
+            <!-- <input type="number" class="count" id="countDining" value="0" min="0" max="1"> -->
           </div>
         </div>
         <div class="room">
           <div class="counter">
             <i class="fa-solid fa-car"></i>
             <p>Garage</p>
-            <input type="number" class="count" id="countGarage" value="1" min="1" max="1">
+            <input type="number" class="count" id="countGarage" value="1" min="1">
+            <!-- <input type="number" class="count" id="countGarage" value="1" min="1" max="1"> -->
           </div>
         </div>
       </div>
@@ -83,39 +86,74 @@
       <input type="submit" value="Generate" class="generate">
     </div>
     <div class="planOutput">
-      <div class="planShow">
-            <img src="" alt="" class="planImg">
-      </div>
-      <table>
+      <!-- <div class="planShow">
+        <img src="" alt="" class="planImg">
+      </div> -->
+      <button class="view2dBackButton">&larr;</button>
+      <table id="plans4">
         <tr>
-            <td>
-                <figure>
-                    <img src="" alt="Front" id="front">
-                    <figcaption>Front</figcaption>
-                </figure>
-            </td>
-            <td>
-                <figure>
-                    <img src="" alt="Back" id="back">
-                    <figcaption>Back</figcaption>
-                </figure>
-            </td>
+          <td>
+            <figure>
+              <img src="" alt="plan1" id="plan1">
+              <figcaption>Plan 1</figcaption>
+              <button class="view3dButton">Detailed View</button>
+            </figure>
+          </td>
+          <td>
+            <figure>
+              <img src="" alt="plan2" id="plan2">
+              <figcaption>Plan 2</figcaption>
+              <button class="view3dButton">Detailed View</button>
+            </figure>
+          </td>
         </tr>
         <tr>
-            <td>
-                <figure>
-                    <img src="" alt="Left Side View" id="side1">
-                    <figcaption>Left Side View</figcaption>
-                </figure>
-            </td>
-            <td>
-                <figure>
-                    <img src="" alt="Right Side View" id="side2">
-                    <figcaption>Right Side View</figcaption>
-                </figure>
-            </td>
+          <td>
+            <figure>
+              <img src="" alt="plan3" id="plan3">
+              <figcaption>Plan 3</figcaption>
+              <button class="view3dButton">Detailed View</button>
+            </figure>
+          </td>
+          <td>
+            <figure>
+              <img src="" alt="plan4" id="plan4">
+              <figcaption>Plan 4</figcaption>
+              <button class="view3dButton">Detailed View</button>
+            </figure>
+          </td>
         </tr>
-    </table>
+      </table>
+      <table id="views4">
+        <tr>
+          <td>
+            <figure>
+              <img src="" alt="Front" id="front">
+              <figcaption>Front</figcaption>
+            </figure>
+          </td>
+          <td>
+            <figure>
+              <img src="" alt="Back" id="back">
+              <figcaption>Back</figcaption>
+            </figure>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <figure>
+              <img src="" alt="Left Side View" id="side1">
+              <figcaption>Left Side View</figcaption>
+            </figure>
+          </td>
+          <td>
+            <figure>
+              <img src="" alt="Right Side View" id="side2">
+              <figcaption>Right Side View</figcaption>
+            </figure>
+          </td>
+        </tr>
+      </table>
     </div>
   </div>
   <script src="https://kit.fontawesome.com/86c69c1c6c.js" crossorigin="anonymous"></script>
